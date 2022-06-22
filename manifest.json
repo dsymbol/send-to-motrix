@@ -1,0 +1,32 @@
+{
+    "manifest_version": 2,
+    "name": "Send to Motrix",
+    "author": "dsymbol",
+    "version": "1.0",
+    "description": "Sends links to the Motrix download manager on demand",
+    "homepage_url": "https://github.com/dsymbol/send-to-motrix",
+    "icons": {
+        "16": "icons/16.png",
+        "32": "icons/32.png",
+        "64": "icons/64.png",
+        "128": "icons/128.png",
+        "256": "icons/256.png"
+    },
+    "browser_action": {
+        "browser_style": true,
+        "default_icon": {
+            "16": "icons/16.png",
+            "32": "icons/32.png",
+            "64": "icons/64.png",
+            "128": "icons/128.png",
+            "256": "icons/256.png"
+        },
+        "default_title": "Send to Motrix",
+        "default_popup": "popup/popup.html"
+    },
+    "permissions": ["menus", "notifications", "storage"],
+    "background": {
+        "scripts": ["background.js"],
+        "persistent": true
+    }
+}
